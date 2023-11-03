@@ -83,20 +83,34 @@ function numberKeyUp() {
     calcValue();
 }
 
-function numberKeyDown() {
+function numberKeyDown() {   
     if(screenText.innerText === "Syntax Error") {
         let enButton = document.getElementById("keyDel");
         enButton.disabled = false;
         enButton.style.opacity = 1;
         screenText.innerText = "";
-        screenText.innerHTML += this.innerText;
-        this.style.transform = "translateY(3px)";
-        this.style.boxShadow = "none";
+        if(this.id === "keyMult") {
+            screenText.innerText += "*";
+            this.style.transform = "translateY(3px)";
+            this.style.boxShadow = "none";
+        }
+        else {
+            screenText.innerText += this.innerText;
+            this.style.transform = "translateY(3px)";
+            this.style.boxShadow = "none";
+        }
     }
     else {
-        screenText.innerHTML += this.innerText;
-        this.style.transform = "translateY(3px)";
-        this.style.boxShadow = "none";
+        if(this.id === "keyMult") {
+            screenText.innerText += "*";
+            this.style.transform = "translateY(3px)";
+            this.style.boxShadow = "none";
+        }
+        else {
+            screenText.innerHTML += this.innerText;
+            this.style.transform = "translateY(3px)";
+            this.style.boxShadow = "none";
+        }
     }
 }
 

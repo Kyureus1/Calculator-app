@@ -179,13 +179,66 @@ body{
 
 @media(max-width: 428px) {
     #panel {
-        width: 100%;
-        height: 100%;
-    }
-    body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        width: 100%;
+    }
+    #upper-controls {
+        width: 100%;
+    }
+    #data {
+        width: 100%;
+    }
+
+    #keys {
+        width: 100%;
+    }
+
+    #slider-input::-webkit-slider-runnable-track {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width: 359px) {
+    #keys {
+        justify-content: space-between;
+    }
+    #keyEq, #keyRes {
+        width: 60px;
+    }
+    #keyEq {
+        order: 15;
+    }
+    #keyDel {
+        order: 13;
+    }
+    #keyRes {
+        order: 14;
+    }
+    #key1, #key2, #key3 {
+        order: 0;
+    }
+    #key4, #key5, #key6 {
+        order: 1;
+    }
+    #key7, #key8, #key9 {
+        order: 2;
+    }
+    #keyAdd {
+        order: 3;
+    }
+    #key0 {
+        order: 5;
+    }
+    #keySub {
+        order: 4;
+    }
+    #keyDiv, #keyMult {
+        order: 6;
+    }
+    #keyDec {
+        order: 7;
     }
 }

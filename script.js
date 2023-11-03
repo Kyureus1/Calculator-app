@@ -36,7 +36,7 @@ let keyRes = new key("RESET", "keyRes");
 let keyDec = new key(".", "keyDec");
 let keyAdd = new key("+", "keyAdd");
 let keySub = new key("-", "keySub");
-let keyMult = new key("*", "keyMult");
+let keyMult = new key("x", "keyMult");
 let keyDiv = new key("/", "keyDiv");
 
 keys.push(key7);
@@ -64,7 +64,7 @@ keys.forEach(key => {
         let keyInject = `<button id="${key.id}" class="number">${key.name}</button>`;
         keyboard.innerHTML += keyInject;
     }
-    else if(key.name === "+" || key.name === "/" || key.name === "*" || key.name === "-" || key.name ===".") {
+    else if(key.name === "+" || key.name === "/" || key.name === "x" || key.name === "-" || key.name ===".") {
         let keyInject = `<button id="${key.id}" class="operator">${key.name}</button>`;
         keyboard.innerHTML += keyInject;
     }

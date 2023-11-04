@@ -196,9 +196,16 @@ body{
     }
 
     #slider-input::-webkit-slider-runnable-track {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        border-radius: 50px;
+        height: 20px;
+        width: 40px;
+        border-style: solid;
+    }
+    #slider-input::-webkit-slider-thumb {
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        margin-top: 0px;
     }
 }
 @media(max-width: 359px) {

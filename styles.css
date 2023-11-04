@@ -195,19 +195,35 @@ body{
         width: 100%;
     }
 
+    #slider-input,
+    #slider-input::-webkit-slider-runnable-track,
+    #slider-input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background: none;
+    }
+
+    #slider-input {
+        --trackbackg: hsl(223, 31%, 20%);
+        --thumbbackg: hsl(6, 63%, 50%);
+        margin: 0px;
+        width: 60px;  
+    }
+
     #slider-input::-webkit-slider-runnable-track {
+        background-color: var(--trackbackg);
         border-radius: 50px;
         height: 20px;
         width: 40px;
         border-style: solid;
+        border-color: var(--trackbackg);
     }
+
     #slider-input::-webkit-slider-thumb {
-        border: none;
+        background-color: var(--thumbbackg);
         width: 14px;
         height: 14px;
         border-radius: 100%;
         margin-top: 0px;
-        transform: translateY(30%);
     }
 }
 @media(max-width: 359px) {

@@ -202,11 +202,11 @@ body{
         border-style: solid;
     }
     #slider-input::-webkit-slider-thumb {
-        display: inline-block;
         width: 14px;
         height: 14px;
         border-radius: 100%;
         margin-top: 0px;
+        transform: translateY(-50%);
     }
 }
 @media(max-width: 359px) {

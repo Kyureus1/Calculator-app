@@ -207,7 +207,7 @@ body{
         height: 14px;
         border-radius: 100%;
         margin-top: 0px;
-        transform: translateY(10%);
+        transform: translateY(30%);
     }
 }
 @media(max-width: 359px) {

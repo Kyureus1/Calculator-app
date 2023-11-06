@@ -295,5 +295,3 @@ function calcValue() {
 }
 
 slider.addEventListener("input", calcValue);
-
-window.onload = calcValue();

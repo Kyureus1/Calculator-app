@@ -279,8 +279,6 @@ function theme3() {
     slider.style.setProperty('--thumbbackg', 'hsl(176, 100%, 44%)');
 }
 
-theme();
-
 function calcValue() {
     let aux = slider.valueAsNumber;
     if(aux === 1) {
@@ -293,5 +291,7 @@ function calcValue() {
         theme3();
     }
 }
+
+calcvalue();
 
 slider.addEventListener("input", calcValue);

@@ -292,6 +292,6 @@ function calcValue() {
     }
 }
 
-calcvalue();
+calcValue();
 
 slider.addEventListener("input", calcValue);

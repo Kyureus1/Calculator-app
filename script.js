@@ -13,6 +13,8 @@ const body = document.body;
 const panel = document.getElementById("panel");
 const upperText = document.getElementsByClassName("upper-text");
 
+calcValue();
+
 class key {
     constructor(name, id) {
         this.name = name;

@@ -295,5 +295,3 @@ function calcValue() {
 }
 
 slider.addEventListener("input", calcValue);
-
-//solo falta crear el tercer tema y modificar la apariencia del input (esto se ve dificil)
